@@ -1,1 +1,351 @@
-{\rtf1}
+/* Linear Gradient for top-nav section: top - #f66457, bottom - #dc483a */
+/* Client Logo Fonts
+    1. font-family: 'Oswald', sans-serif;
+    2. font-family: 'Marck Script', cursive;
+    3. font-family: 'Playfair Display', serif;
+    4. font-family: 'Yellowtail', cursive;
+    5. font-family: 'Tangerine', cursive;
+*/
+/* Text font - font-family: 'Anton', sans-serif; */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+
+:root {
+    --prim: #e0463a;
+    --sec: #fef1c6;
+    --figureSec: #f5eedc;
+    --textColor: #691e1b;
+    --offerBg: #f9f5ea;
+    --offerHeader: #918a1d;
+    --offerIcon: #969b00;
+    --clientBg: #66635e;
+    --infoBg: #5c5954;
+    --colophonBg: #413e39;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.soc-list .icon:hover {
+    color: white;
+}
+
+.sr-only {
+    display: none;
+}
+
+/* Start Header */
+
+.social-section {
+    background-color: var(--prim);
+}
+
+.soc-list .icon {
+    color: var(--sec);
+}
+
+.top-nav-section {
+    padding: 20px;
+    background: linear-gradient(#f66457, #d04737)
+}
+
+.logo {
+    text-transform: capitalize;
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+.nav-link {
+    margin-top: 5px;
+    color: var(--sec);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.dropdown-item {
+    text-transform: uppercase;
+}
+
+.slogan-section {
+    padding: 20px;
+    background-color: var(--sec);
+}
+
+.slogan-text {
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: var(--textColor);
+    max-width: 175px;
+}
+
+.search-bar {
+    margin-top: 25px;
+    margin-left: 425px;
+}
+
+.icon-search {
+    margin-left: -30px;
+    margin-top: -2px;
+    color: black;
+}
+
+/* End Header */
+
+/* Start Main */
+
+.carousel-control-next, .carousel-control-prev {
+    top: 80%;
+    opacity: 100%;
+    font-size: 42px;
+    color: var(--sec);
+    width: 5%;
+}
+
+.carousel-control-prev {
+    left: 80%;
+}
+
+.carousel-control-next {
+    right: 10%;
+}
+
+.figure-section {
+    background-color: var(--figureSec);
+    padding: 25px;
+}
+
+figcaption {
+    padding: 10px;
+    background-color: white;
+}
+
+.figcaption-header {
+    margin: -5px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--prim);
+}
+
+.figcaption-text {
+    margin: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.offer-section {
+    padding: 20px;
+    background-color: var(--offerBg);
+}
+
+.offer-section .sub-header {
+    padding-bottom: 20px;
+    color: var(--textColor);
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.img-div {
+    color: var(--offerIcon);
+}
+
+.icon-coffee, .icon-fork-and-knife, .icon-heart {
+    font-size: 54px;
+}
+
+.offer-header {
+    color: var(--offerHeader);
+}
+
+.small-text {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.click-here {
+    text-transform: capitalize;
+    color: var(--prim);
+}
+
+/* End Main */
+
+/* Start Footer */
+
+.client-section {
+    padding: 25px;
+    background-color: var(--clientBg);
+}
+
+.client-list .item1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+}
+
+.client-list .item2 {
+    font-family: 'Marck Script', cursive;
+    color: white;
+    text-transform: capitalize;
+}
+
+.client-list .item3 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-transform: capitalize;
+}
+
+.client-list .item4 {
+    font-family: 'Yellowtail', cursive;
+    color: white;
+    text-transform: capitalize;
+}
+
+.client-list .item5 {
+    font-family: 'Tangerine', cursive;
+    color: white;
+    text-transform: capitalize;
+}
+
+.info-section {
+    background-color: var(--infoBg);
+}
+
+.info-section h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: white;
+}
+
+.info-section h3 {
+    font-size: 18px;
+    color: white;
+}
+
+.footer-about-text, .footer-blog-text {
+    color: lightgrey;
+}
+
+.info-section .container {
+    margin-left: 285px;
+    padding: 20px;
+}
+
+.read-more {
+    text-transform: capitalize;
+    color: lightgrey;
+}
+
+.blog-list, .contact-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact-list {
+    color: lightgrey;
+}
+
+.contact-link {
+    color: lightgrey;
+}
+
+.colophon-section {
+    padding: 20px;
+    background-color: var(--colophonBg);
+    color: white;
+}
+
+.colophon-logo {
+    margin-bottom: -5px;
+    text-transform: capitalize;
+}
+
+.colophon-text {
+    text-transform: uppercase;
+}
+
+/* Start About Page */
+
+.about-us-section {
+    background-color: var(--figureSec);
+}
+
+.about-header {
+    padding: 15px;
+    color: var(--textColor);
+}
+
+.about-header:before {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 2px;
+    background: var(--textColor);
+    left: 0;
+    top: 31%;
+    position: absolute;
+}
+
+.about-header:after {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 2px;
+    background: var(--textColor);
+    right: 0;
+    top: 31%;
+    position: absolute;
+}
+
+.about-us-img {
+    margin-left: 450px;
+    padding: 20px;
+}
+
+.about-us-text {
+    padding: 15px;
+    text-indent: 25px;
+    text-align: justify;
+    background-color: var(--figureSec);
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .search-bar {
+        margin: 0;
+        padding-left: 155px;
+    }
+    .info-section .container {
+        margin: 0 auto;
+    }
+    .footer-info {
+        padding-bottom: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .search-bar {
+        margin-top: -55px;
+        padding-left: 75px;
+    }
+}
